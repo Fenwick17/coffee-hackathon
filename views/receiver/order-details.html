@@ -15,7 +15,30 @@
   
   <div class="container">
     <div class="row">
-      <h1>Order Details</h1>
+      <img class="col s12" src="/public/images/logo.png" alt="4 Coffee Logo">
+    </div>
+    <div class="row">
+      <h1>Order details</h1>
+      <form action="review-order.html">
+        <div class="input-field col s12">
+          <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Black Americano</option>
+            <option value="2">Espresso</option>
+            <option value="3">Flat White</option>
+            <option value="4">Latte</option>
+            <option value="5">Cappuccino</option>
+            <option value="6">White Coffee</option>
+
+          </select>
+          <label>What would you like to order?</label>
+        </div>
+        <div class="col s12">
+          <button class="btn waves-effect waves-light brown">Place your order
+            <i class="material-icons right">local_drink</i>
+          </button>
+        </div>
+      </form>
     </div>
   </div>
   
@@ -23,5 +46,10 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('select').material_select();
+  });
+</script>
 </body>
 </html>
