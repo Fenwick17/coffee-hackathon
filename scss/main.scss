@@ -31,3 +31,16 @@
 h1 {
   font-size: 24px;
 }
+
+.collection .collection-item.avatar .secondary-content {
+  right: 35px;
+}
+
+.cross {
+  right: 5px !important;
+}
+
+.accepted {
+  display: none;
+  color: green;
+}
